@@ -6,5 +6,5 @@ for n in `seq -w 1200`
   touch $DEST/DSC-$n.jpg
 done
 
-dd if=/dev/zero of=$DEST/softwares.iso bs=1M count=50
-dd if=/dev/zero of=$DEST/hd2.vdi bs=1M count=200
+dd if=/dev/zero of=$DEST/softwares.iso bs=1M count=50 2>&-
+dd if=/dev/zero of=$DEST/hd2.vdi bs=1M count=200 2>&-
