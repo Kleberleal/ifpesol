@@ -1,0 +1,13 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	900
+@	IN	SOA	redes.ifpe. root.redes.ifpe. (
+	              201609084		; Serial
+			   3600		; Refresh
+			    600		; Retry
+			2419200		; Expire
+			    600 )	; Negative Cache TTL
+;
+@	IN	NS	ns1.redes.ifpe.
+ns1	IN	A	127.0.0.1
